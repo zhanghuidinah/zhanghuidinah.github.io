@@ -115,18 +115,18 @@
 
 
 
-  <meta name="description" content="在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,学校中可受不了,于是我得想办法把它关了 解决方案有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸: 1]# rmmod pcspkr 但这样重启后系统依旧会加载报警模块,因此需要在/etc/modprobe.d目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块: 1]# vim /etc/modprobe.d/n">
+  <meta name="description" content="在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,公司中可受不了,于是我得想办法把它关了 解决方案有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸: 1]# rmmod pcspkr 但这样重启后系统依旧会加载报警模块,因此需要在/etc/modprobe.d目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块: 1]# vim /etc/modprobe.d/n">
 <meta name="keywords" content="linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="arch关闭响铃">
 <meta property="og:url" content="https://zhanghuidinah.github.io/2018/10/30/arch关闭响铃/index.html">
 <meta property="og:site_name" content="zhanghuidinah">
-<meta property="og:description" content="在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,学校中可受不了,于是我得想办法把它关了 解决方案有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸: 1]# rmmod pcspkr 但这样重启后系统依旧会加载报警模块,因此需要在/etc/modprobe.d目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块: 1]# vim /etc/modprobe.d/n">
+<meta property="og:description" content="在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,公司中可受不了,于是我得想办法把它关了 解决方案有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸: 1]# rmmod pcspkr 但这样重启后系统依旧会加载报警模块,因此需要在/etc/modprobe.d目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块: 1]# vim /etc/modprobe.d/n">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-10-30T08:30:14.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="arch关闭响铃">
-<meta name="twitter:description" content="在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,学校中可受不了,于是我得想办法把它关了 解决方案有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸: 1]# rmmod pcspkr 但这样重启后系统依旧会加载报警模块,因此需要在/etc/modprobe.d目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块: 1]# vim /etc/modprobe.d/n">
+<meta name="twitter:description" content="在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,公司中可受不了,于是我得想办法把它关了 解决方案有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸: 1]# rmmod pcspkr 但这样重启后系统依旧会加载报警模块,因此需要在/etc/modprobe.d目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块: 1]# vim /etc/modprobe.d/n">
 
 
 
@@ -387,7 +387,7 @@
       
 
       
-        <p>在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,学校中可受不了,于是我得想办法把它关了</p>
+        <p>在linux命令行界面时,一旦敲tab键总是听到烦人的报警声…在家也就算了,公司中可受不了,于是我得想办法把它关了</p>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>有一个很快捷的方法:卸载内核加载的报警模块,一劳永逸:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">]# rmmod pcspkr</span><br></pre></td></tr></table></figure>
 <p>但这样重启后系统依旧会加载报警模块,因此需要在<code>/etc/modprobe.d</code>目录下新建一个.conf文件,设置黑名单屏蔽不需要的模块:</p>
